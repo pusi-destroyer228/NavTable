@@ -46,6 +46,7 @@ body{
 }
 
 .table tbody td{
+   color: #2a3644;
    padding: 15px 0;
    border-left: 1px solid #c0c1c2;
 }
