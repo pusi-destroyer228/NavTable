@@ -4,6 +4,174 @@ body{
    margin: 0;
 }
 
+.wrapper {
+   max-width: 960px;
+   margin: 0 auto;
+}
+
+h1 {
+   margin: 25px 0;
+   font-size: 24px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   color: #bfbfbf;
+   font-weight: bold;
+}
+
+a {
+   text-decoration: none;
+}
+
+.wrapper {
+   margin: 25px auto;
+   box-sizing: border-box;
+   max-width: 960px;
+}
+
+.flex {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}  
+
+.food,
+.netbook,
+.main {
+   padding-bottom: 40px;
+}
+
+.netbook {
+   display: table;
+}
+
+.top-bar {
+   background-color: #2a3644;
+   border-radius: 3px;
+   overflow: hidden;
+}
+
+.menu,
+.menu-bottom {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.menu li,
+.menu-bottom li {
+   padding: 14px 32px;
+}
+
+.menu a,
+.menu-bottom a {
+   font-size: 16px;
+   font-weight: bold;
+   color: #fff;
+}
+
+.tasty li {
+   border-left: 1px solid #3f4852;
+   border-right: 1px solid #3f4852;
+}
+
+.menu li:hover {
+   background-color: #3f4852;
+}
+
+.menu li:hover > a {
+   font-weight: bold;
+   color: #fd8612;
+}
+
+ul.market li {
+   padding: 14px 43px;
+   border-left: 1px solid #3f4852;
+}
+
+.top-menu {
+   display: flex;
+}
+
+.top-menu li:first-child {
+   padding-left: 60px;
+}
+
+.top-menu li {
+   border-right: 1px solid #3f4852;
+}
+
+.top-menu li {
+   position: relative;
+}
+
+.top-menu a.home-page::before {
+   content: "";
+   position: absolute;
+   left: 32px;
+   background: url(../img/sprite.png) no-repeat;
+   width: 16px;
+   height: 13px;
+   background-position: 0 0;
+}
+
+.top-menu li:hover>a.home-page  {
+   width: 16px;
+   height: 13px;
+   background-position: 0 0;
+}
+
+.social {
+   padding: 14px 30px 14px;
+   display: flex;
+   align-items: flex-end;
+   column-gap: 25px;
+}
+
+.social li {
+   padding: 0;
+}
+
+.social a {
+   display: block;
+   background: url(../img/sprite.png) no-repeat;
+}
+
+a.fb {
+   height: 19px;
+   width: 10px;
+   background-position: -18px 0px;
+}
+
+.social li:hover>.fb {
+   height: 19px;
+   width: 10px;
+   background-position: -18px -18px;
+}
+
+a.tw {
+   width: 18px;
+   height: 15px;
+   background-position: -31px 0;
+}
+
+.social li:hover>.tw {
+   width: 18px;
+   height: 15px;
+   background-position: -31px -18px;
+}
+
+a.inst {
+   width: 19px;
+   height: 19px;
+   background-position: -49px 2px; 
+}
+
+.social li:hover>.inst {
+   width: 19px;
+   height: 19px;
+   background-position: -49px -16px; 
+}
+
 .table{
    width: 100%;
    max-width: 960px;
