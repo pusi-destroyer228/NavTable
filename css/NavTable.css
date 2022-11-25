@@ -286,13 +286,14 @@ a.inst {
    padding-left: 20px;
 }
 
-.numbers {
+.table .numbers {
+
    text-align: center;
    border-left: none;
 }
 
 
-.cat1 {
+.table .cat1 {
    border-bottom: none;
    background-color: #e8e8e8;
 }
