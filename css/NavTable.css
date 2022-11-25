@@ -222,11 +222,11 @@ a.inst {
    overflow: hidden;
 }
 
-#tr1 {
+.tr1 {
    cursor: url(../img/cursor3.cur), auto;
 }
 
-#tr2 {
+.tr2 {
    cursor: url(../img/cursor3.cur), auto;
 }
 
@@ -241,17 +241,17 @@ a.inst {
    border-bottom: 1px solid #c0c1c2;
 }
 
-#tr1:hover {
+.tr1:hover {
    color: #000;
    background-color: #c0c1c2;
 }
 
-#tr2:hover {
+.tr2:hover {
    color: #000;
    background-color: #c0c1c2;
 }
 
-#cat1:hover {
+.cat1:hover {
    color: #000;
    background-color: #c0c1c2;
 }
@@ -261,47 +261,56 @@ a.inst {
    padding: 15px 0;
 }
 
-.table tbody td {
+.table .name {
+   text-align: left;
+   padding-left: 20px;
+}
+
+.table td {
    color: #2a3644;
-   padding: 15px 0;
+   padding: 15px 0 ;
    border-left: 1px solid #c0c1c2;
 }
 
-#number {
+.table .th2 {
+   padding: 0 0 0 20px;
+}
+
+.table .number {
    text-align: right;
    padding: 0 20px 0 0;
 }
 
-#name {
+.name {
    text-align: left;
-   padding: 0 0 0 20px;
+   padding-left: 20px;
 }
 
-#numbers {
+.numbers {
    text-align: center;
    border-left: none;
 }
 
 
-#cat1 {
+.cat1 {
    border-bottom: none;
    background-color: #e8e8e8;
 }
 
-#tr1 {
+.tr1 {
    background-color: #f2f2f2;
 }
 
-#tr2 {
+.tr2 {
    background-color: #e8e8e8;
 }
 
-#cat2 {
+.cat2 {
    border-bottom: none;
    background-color: #f2f2f2;
 }
 
-#th2 {
+.th2 {
    padding-left: 25px;
    text-align: left;
 }
