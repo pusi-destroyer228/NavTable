@@ -1,7 +1,7 @@
-
-body{
+body {
    font-family: Arial, Helvetica, sans-serif;
    margin: 0;
+   cursor: url(../img/cursor2.cur), auto;
 }
 
 .wrapper {
@@ -18,7 +18,12 @@ h1 {
    font-weight: bold;
 }
 
+li {
+   cursor: url(../img/cursor3.cur), auto;
+}
+
 a {
+   cursor: url(../img/cursor3.cur), auto;
    text-decoration: none;
 }
 
@@ -32,15 +37,15 @@ a {
    width: 100%;
    display: flex;
    justify-content: space-between;
-}  
+}
 
-.food,
-.netbook,
-.main {
+.top,
+.middle,
+.bottom {
    padding-bottom: 40px;
 }
 
-.netbook {
+.middle {
    display: table;
 }
 
@@ -48,6 +53,40 @@ a {
    background-color: #2a3644;
    border-radius: 3px;
    overflow: hidden;
+}
+
+.sub_menu {
+   width: 210px;
+   padding-top: 35px;
+   display: none;
+   position: absolute;
+   top: 15px;
+   left: -1px;
+   border-radius: 3px;
+   z-index: 1;
+}
+
+.sub-menu li {
+   list-style: none;
+   padding: 17px 25px;
+   background-color: #d2d4d5;
+}
+
+.sub-menu li:hover {
+   background-color: #2a3644;
+}
+
+.sub-menu a {
+   text-decoration: none;
+   font-size: 15px;
+   font-weight: bold;
+   color: #2a3644;
+}
+
+.open:hover>.sub_menu {
+   visibility: visible;
+   max-height: 1000px;
+   transition: 0.5s;
 }
 
 .menu,
@@ -69,7 +108,7 @@ a {
    color: #fff;
 }
 
-.tasty li {
+.food li {
    border-left: 1px solid #3f4852;
    border-right: 1px solid #3f4852;
 }
@@ -78,33 +117,33 @@ a {
    background-color: #3f4852;
 }
 
-.menu li:hover > a {
+.menu li:hover>a {
    font-weight: bold;
    color: #fd8612;
 }
 
-ul.market li {
+ul.different li {
    padding: 14px 43px;
    border-left: 1px solid #3f4852;
 }
 
-.top-menu {
+.left-menu {
    display: flex;
 }
 
-.top-menu li:first-child {
+.left-menu li:first-child {
    padding-left: 60px;
 }
 
-.top-menu li {
+.left-menu li {
    border-right: 1px solid #3f4852;
 }
 
-.top-menu li {
+.left-menu li {
    position: relative;
 }
 
-.top-menu a.home-page::before {
+.left-menu a.main-page::before {
    content: "";
    position: absolute;
    left: 32px;
@@ -114,7 +153,7 @@ ul.market li {
    background-position: 0 0;
 }
 
-.top-menu li:hover>a.home-page  {
+.left-menu li:hover>a.main-page {
    width: 16px;
    height: 13px;
    background-position: 0 0;
@@ -163,16 +202,16 @@ a.tw {
 a.inst {
    width: 19px;
    height: 19px;
-   background-position: -49px 2px; 
+   background-position: -49px 2px;
 }
 
 .social li:hover>.inst {
    width: 19px;
    height: 19px;
-   background-position: -49px -16px; 
+   background-position: -49px -16px;
 }
 
-.table{
+.table {
    width: 100%;
    max-width: 960px;
    border-collapse: collapse;
@@ -183,54 +222,62 @@ a.inst {
    overflow: hidden;
 }
 
-.table thead tr{
+#tr1 {
+   cursor: url(../img/cursor3.cur), auto;
+}
+
+#tr2 {
+   cursor: url(../img/cursor3.cur), auto;
+}
+
+.table thead tr {
    color: #fff;
    background-color: #2a3644;
    border-bottom: 1px solid #3f4852;
 }
 
-.table tbody tr{
+.table tbody tr {
    color: #000;
    border-bottom: 1px solid #c0c1c2;
 }
 
-#tr1:hover{
+#tr1:hover {
    color: #000;
    background-color: #c0c1c2;
 }
 
-#tr2:hover{
+#tr2:hover {
    color: #000;
    background-color: #c0c1c2;
 }
 
-#cat1:hover{
+#cat1:hover {
    color: #000;
    background-color: #c0c1c2;
 }
 
-.table thead th{
+.table thead th {
    border-left: 1px solid #3f4852;
    padding: 15px 0;
 }
 
-.table tbody td{
+.table tbody td {
    color: #2a3644;
    padding: 15px 0;
    border-left: 1px solid #c0c1c2;
 }
 
-#number{
+#number {
    text-align: right;
    padding: 0 20px 0 0;
 }
 
-#name{
+#name {
    text-align: left;
    padding: 0 0 0 20px;
 }
 
-#numbers{
+#numbers {
    text-align: center;
    border-left: none;
 }
@@ -273,6 +320,10 @@ a.inst {
    display: table-row;
 }
 
+.table_style {
+   cursor: url(../img/cursor3.cur), auto;
+}
+
 .head {
    max-width: 20px;
    display: table-cell;
@@ -295,7 +346,7 @@ a.inst {
 
 .table_head div:first-child {
    text-align: center;
-   padding: 0 1px ;
+   padding: 0 1px;
    width: 55px;
 }
 
@@ -359,7 +410,7 @@ a.inst {
    background-color: #e8e8e8;
 }
 
-.table_style:hover > div {
+.table_style:hover>div {
    background-color: #c0c1c2;
    border-top-color: #c0c1c2;
    border-left-color: #c0c1c2;
