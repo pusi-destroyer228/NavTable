@@ -51,12 +51,22 @@ a {
 
 .top-bar {
    background-color: #2a3644;
-   border-radius: 3px;
-   overflow: hidden;
+   border-top-left-radius: 3px;
+   border-bottom-left-radius: 3px;
+   border-top-right-radius: 3px;
+   border-bottom-right-radius: 3px;
+}
+
+#left_li {
+   border-left: none;
+}
+
+.open {
+   position: relative;
 }
 
 .sub_menu {
-   width: 210px;
+   width: 220px;
    padding-top: 35px;
    display: none;
    position: absolute;
@@ -64,26 +74,54 @@ a {
    left: -1px;
    border-radius: 3px;
    z-index: 1;
+   padding: 35px 0 0 0;
 }
 
-.sub-menu li {
+
+
+.sub_menu li {
+   border: 1px solid #b9bdc1;
    list-style: none;
    padding: 17px 25px;
    background-color: #d2d4d5;
 }
 
-.sub-menu li:hover {
+.sub_menu li:hover {
    background-color: #2a3644;
 }
 
-.sub-menu a {
+.sub_last {
+   left: -76%;
+}
+
+.first_li {
+   border-top-left-radius: 3px;
+   border-top-right-radius: 3px;
+}
+
+.last_li {
+   border-bottom-left-radius: 3px;
+   border-bottom-right-radius: 3px;
+}
+
+.menu>.sub_menu a {
    text-decoration: none;
    font-size: 15px;
    font-weight: bold;
    color: #2a3644;
 }
 
+.sub_li {
+   border-left: none;
+   border-right: none;
+}
+
+#sub_li3 {
+   padding: 15px 25px;
+}
+
 .open:hover>.sub_menu {
+   display: block;
    visibility: visible;
    max-height: 1000px;
    transition: 0.5s;
@@ -105,16 +143,29 @@ a {
 .menu-bottom a {
    font-size: 16px;
    font-weight: bold;
+}
+
+.menu_a {
    color: #fff;
 }
 
-.food li {
+.main-page {
+   color: #fff;
+}
+
+.open {
    border-left: 1px solid #3f4852;
    border-right: 1px solid #3f4852;
 }
 
 .menu li:hover {
+   border-top-left-radius: 3px;
+   border-bottom-left-radius: 3px;
    background-color: #3f4852;
+}
+
+.sub_li a {
+   color: #2a3644;
 }
 
 .menu li:hover>a {
@@ -268,7 +319,7 @@ a.inst {
 
 .table td {
    color: #2a3644;
-   padding: 13px 0 ;
+   padding: 13px 0;
    border-left: 1px solid #c0c1c2;
 }
 
