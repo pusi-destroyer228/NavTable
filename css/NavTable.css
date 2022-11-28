@@ -77,7 +77,16 @@ a {
    padding: 35px 0 0 0;
 }
 
-
+.sub_menu1 {
+   width: 220px;
+   padding-top: 35px;
+   display: none;
+   position: absolute;
+   top: 15px;
+   border-radius: 3px;
+   z-index: 1;
+   padding: 0 7px 0 0;
+}
 
 .sub_menu li {
    border: 1px solid #b9bdc1;
@@ -111,7 +120,7 @@ a {
    color: #2a3644;
 }
 
-.sub_li {
+.top-bar .sub_li {
    border-left: none;
    border-right: none;
 }
@@ -121,6 +130,13 @@ a {
 }
 
 .open:hover>.sub_menu {
+   display: block;
+   visibility: visible;
+   max-height: 1000px;
+   transition: 0.5s;
+}
+
+.open:hover>.sub_menu1 {
    display: block;
    visibility: visible;
    max-height: 1000px;
@@ -159,13 +175,49 @@ a {
 }
 
 .menu li:hover {
-   border-top-left-radius: 3px;
-   border-bottom-left-radius: 3px;
    background-color: #3f4852;
 }
 
 .sub_li a {
    color: #2a3644;
+}
+
+.sub_second {
+   left: 215px;
+   padding-top: 0;
+   padding-left: 10px;
+}
+
+.sub_third {
+   right: 100%;
+}
+
+.top-bar .li_first {
+   padding-top: 14px ;
+   padding-bottom: 14px ;
+   padding-left: 20px ;
+   padding-right: 0;
+}
+
+.top-bar .li_second {
+   padding-top: 14px ;
+   padding-bottom: 14px ;
+   padding-left: 20px ;
+   padding-right: 0;
+}
+
+.top-bar .li_third {
+   padding-top: 14px ;
+   padding-bottom: 14px ;
+   padding-left: 20px ;
+   padding-right: 0;
+}
+
+.top-bar .li_fourth {
+   padding-top: 14px ;
+   padding-bottom: 14px ;
+   padding-left: 20px ;
+   padding-right: 0;
 }
 
 .menu li:hover>a {
