@@ -99,10 +99,83 @@ a {
    background-color: #2a3644;
 }
 
-.double_sub {
-   left: 129%;
-   max-height: 165px;
+.double-menu .sub-menu {
+   width: 420px;
 }
+
+.flex {
+   display: flex;
+}
+
+.sub-menu {
+   max-height: 0;
+   visibility: hidden;
+   position: absolute;
+   width: 210px;
+   padding-top: 20px;
+   padding-left: 0;
+   border-radius: 3px;
+   z-index: 2;
+   left: -1.5%;
+}
+
+.sub-menu li {
+   text-decoration: none;
+   list-style: none;
+}
+
+.sub-menu1>li {
+   background-color: #d2d4d5;
+}
+
+#sub_li1 {
+   padding-left: 32px;
+}
+
+.sub-menu1>li:first-child {
+   border-radius: 3px 0 0 0;
+   border-bottom: 1px solid #b9bdc1;
+}
+
+.sub-menu1>li:last-child {
+   border-top: 1px solid #b9bdc1;
+   border-radius: 0 0 0 3px;
+}
+
+.sub-menu1>li:nth-child(2) {
+   border-bottom: 1px solid #b9bdc1;
+}
+
+.sub-menu2>li:first-child {
+   border-radius: 3px 0 0 0;
+   border-bottom: 1px solid #b9bdc1;
+}
+
+.sub-menu2>li:last-child {
+   border-bottom: 1px solid #b9bdc1;
+}
+
+#last_li {
+   padding-right: 55px;
+}
+
+.sub-menu2 {
+   border-radius: 0 3px 3px 0;
+   background-color: #d2d4d5;
+}
+
+.sub-menu1 {
+   max-width: 210px;
+   border-right: 1px solid #b9bdc1;
+}
+
+li.open:hover>.sub-menu {
+   visibility: visible;
+   max-height: 1000px;
+   transition: 0.5s;
+}
+
+
 
 .sub_back {
    background-color: #b9bdc1;
@@ -146,6 +219,13 @@ a {
 }
 
 .open:hover>.sub_menu1 {
+   display: block;
+   visibility: visible;
+   max-height: 1000px;
+   transition: 0.5s;
+}
+
+.open:hover>.sub_menu3 {
    display: block;
    visibility: visible;
    max-height: 1000px;
