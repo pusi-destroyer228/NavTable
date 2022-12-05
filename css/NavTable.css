@@ -39,6 +39,11 @@ a {
    justify-content: space-between;
 }
 
+.flex1 {
+   width: 100%;
+   display: flex;
+}
+
 .top,
 .middle,
 .bottom {
@@ -59,6 +64,22 @@ a {
 
 #left_li {
    border-left: none;
+}
+
+.left-li {
+   border-right: 1px solid #3f4852;
+}
+
+#left_li:hover {
+   border-radius: 3px 0 0 3px;
+}
+
+#main-page:hover {
+   border-radius: 3px 0 0 3px;
+}
+
+.li_different:hover {
+   border-radius: 0 3px 3px 0
 }
 
 .open {
@@ -89,7 +110,7 @@ a {
 }
 
 .sub_menu li {
-   border: 1px solid #b9bdc1;
+   border-bottom: 1px solid #b9bdc1;
    list-style: none;
    padding: 17px 25px;
    background-color: #d2d4d5;
@@ -156,7 +177,7 @@ a {
 }
 
 #last_li {
-   padding-right: 55px;
+   padding-right: 29px;
 }
 
 .sub-menu2 {
@@ -193,6 +214,14 @@ li.open:hover>.sub-menu {
 .last_li {
    border-bottom-left-radius: 3px;
    border-bottom-right-radius: 3px;
+}
+
+.second_li {
+   border-top-right-radius: 3px;
+}
+
+.second_li:hover {
+   border-top-right-radius: 3px;
 }
 
 .menu>.sub_menu a {
@@ -260,7 +289,6 @@ li.open:hover>.sub-menu {
 
 .open {
    border-left: 1px solid #3f4852;
-   border-right: 1px solid #3f4852;
 }
 
 .menu li:hover {
@@ -336,10 +364,6 @@ ul.different li {
 
 .left-menu li:first-child {
    padding-left: 60px;
-}
-
-.left-menu li {
-   border-right: 1px solid #3f4852;
 }
 
 .left-menu li {
