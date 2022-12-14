@@ -158,6 +158,15 @@ a {
    padding-left: 32px;
 }
 
+#sub_li2 {
+   padding-left: 32px;
+}
+
+#sub_li2:hover {
+   border-top-left-radius: 0px;
+   border-top-right-radius: 3px;
+}
+
 .sub-menu1>li:first-child {
    border-radius: 3px 0 0 0;
    border-bottom: 1px solid #b9bdc1;
@@ -201,7 +210,10 @@ li.open:hover>.sub-menu {
    transition: 0.5s;
 }
 
-
+.moloko:hover {
+   border-bottom-right-radius: 3px;
+   border-top-right-radius: 3px;
+}
 
 .sub_back {
    background-color: #b9bdc1;
